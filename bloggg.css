@@ -1,0 +1,42 @@
+.logo{
+    height: 50px;
+    width: 50px;
+}
+#HEADER{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px an 80px;
+    background: black;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+#navbar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+}
+#navbar li a:hover{
+    color: red;
+    background: blue;
+    box-shadow: 0 5px 15px rgba(0,0.3,0,0.0.6);
+}
+.big_blog img{
+    height: 100%;
+    width: 55%;
+}
+
+.small_log button:hover{
+    background: green;
+    color: rgb(240, 23, 23)
+}
