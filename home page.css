@@ -1,489 +1,507 @@
-
-
-
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.logo{
-    height: 50px;
-    width: 50px;
+.logo {
+  height: 50px;
+  width: 50px;
 }
-#HEADER{
-
-    display: flex;
-    align-items: center;
-    justify-content:space-between ;
-    padding: 20px an 80px;
-    background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+#HEADER {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px an 80px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
-#navbar{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    
+#navbar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
-#navbar li{
-    list-style: none;
-    padding: 0 20px;
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
 }
-#navbar li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: blue;
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: blue;
 }
-#navbar li a:hover{
-    color: red;
-    background:white;
-    box-shadow: 0 5px 15px rgba(0,0.3,0,0.0.6);
+#navbar li a:hover {
+  color: red;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0.3, 0, 0.6);
 }
-.enroll a{
-    color: antiquewhite;
-    text-decoration: none;
+.enroll a {
+  color: antiquewhite;
+  text-decoration: none;
 }
-#MAIN{
-    background-image: url("IMAGES/pexels-pixabay-265087.jpg");
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 0 10px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-
+#MAIN {
+  background-image: url("IMAGES/pexels-pixabay-265087.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 10px;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
-.content{
-    margin-bottom: 300px;
-    padding: 0 50px;
+.content {
+  margin-bottom: 300px;
+  padding: 0 50px;
 }
-#MAIN .content h4{
-    padding-bottom: 50px;
+#MAIN .content h4 {
+  padding-bottom: 50px;
 }
-#MAIN .content h2{
-    color: red;
-    font-size: xx-large;
-    font-weight: 900;
-    background: #130202;
-    border-radius: 3PX;
-    font-style: normal;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-items: center;
- 
+#MAIN .content h2 {
+  color: red;
+  font-size: xx-large;
+  font-weight: 900;
+  background: #130202;
+  border-radius: 3px;
+  font-style: normal;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
-.content h2{
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
-
+.content h2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
 }
-.content h1{
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
-    color: #f47e08;
-    font-weight: 900;
-    font-size: 40px;
-    margin-top: 3%;
-
+.content h1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  color: #f47e08;
+  font-weight: 900;
+  font-size: 40px;
+  margin-top: 3%;
 }
-.content p{
-    display: flex;
-    justify-content: center;
-    margin-left: 20%;
-    color: #f47e08;
-    font-weight: 900;
-    font-size: 20px;
-    margin-top: 1%;
-    background: #130202;
-    padding: 15px 30px ;
-    border-radius: 15px;
-    
-
-}
-
-#MAIN .content button:hover{
-    background-color: green;
-    color: white;
-}
- .course_1 h2{
-    text-align: center;
-    font-size: xx-large;
-}
-.course_1 p{
-    text-align: center;
-    font-size: larger;
-}
-#COURSES .small_course{
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #130202;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0,0,0,0.2);
-    margin: 15px 0;
-}
-#COURSES .small_course img{
-    width: 100%;
-    border-radius: 20px;
-}
-#COURSES .CVIB_COURSES{
-   display: flex;
-   flex-wrap: nowrap;
-   gap: 4rem;
-
-}
-#BANNER .BANNER_1{
-    margin: 20px;
-    padding: 10px;
-}
-#BANNER{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("Graduation 🎓 folder/celebration-education-graduation-throwing-graduation-capscolors-joy-happiness-ai-generated_646649-305.avif");
-    width: 100%;
-    height: 30vh;
-    background-size: cover;
-    color: white;
-}
-#BANNER h2 span{
-    color: blue;
-}
-.enroll{
-    font-size: 16;
-    font-weight: 600;
-    padding: 15px 30px;
-    color: black;
-    background-color: rgb(244, 17, 17);
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    transition: 0.2s;
-    margin-left: 50%;
-    margin-top: 3%;
-}
-#BANNER button:hover{
-    background: green;
-    color: white;
-}
-#COURSES  button:hover{
-    background: green;
-    color: white;
-}
-.row{
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-.col{
-    flex-basis: 30%;
-    padding: 5px;
-    padding-top: 5%;
-    padding-left: 2%;
-    
-}
-.col a{
-    color: aliceblue;
-}
-.footer{
-    width: 100%;
-    height: 60vh;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    
-    background-color: #27252a;
-}
-.underline h3::before{
-    color: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #f47e08;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-
-}
-.col li{
-    list-style: none;
-}
-.col li a{
-    text-decoration: none;
-    color: white;
+.content p {
+  display: flex;
+  justify-content: center;
+  margin-left: 20%;
+  color: #f47e08;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 1%;
+  background: #130202;
+  padding: 15px 30px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
-.CVIB_COURSES span{
-    color: #f47e08;
-    background: #130202;
-    box-sizing: content-box;
-    border-radius: 2px;
+#MAIN .content button:hover {
+  background-color: green;
+  color: white;
 }
-#MAIN h4{
-    padding-right: 50px;
+.course_1 h2 {
+  text-align: center;
+  font-size: xx-large;
 }
-.small_course:hover{
-    transform: scale(1.3);
-    transition: .4s;
+.course_1 p {
+  text-align: center;
+  font-size: larger;
 }
-.container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(164, 110, 240);
+#COURSES .small_course {
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #130202;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#COURSES .small_course img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+#COURSES .CVIB_COURSES {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 4rem;
+}
+#BANNER .BANNER_1 {
+  margin: 20px;
+  padding: 10px;
+}
+#BANNER {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Graduation 🎓 folder/celebration-education-graduation-throwing-graduation-capscolors-joy-happiness-ai-generated_646649-305.avif");
+  width: 100%;
+  height: 30vh;
+  background-size: cover;
+  color: white;
+}
+#BANNER h2 span {
+  color: blue;
+}
+.enroll {
+  font-size: 16;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: black;
+  background-color: rgb(244, 17, 17);
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+  margin-left: 50%;
+  margin-top: 3%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+#BANNER button:hover {
+  background: green;
+  color: white;
+}
+#COURSES button:hover {
+  background: green;
+  color: white;
+}
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col {
+  flex-basis: 30%;
+  padding: 5px;
+  padding-top: 5%;
+  padding-left: 2%;
+}
+.col a {
+  color: aliceblue;
+}
+.footer {
+  width: 100%;
+  height: 60vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
 
+  background-color: #27252a;
 }
-.testimonial{
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    padding: 50px 0;
-    row-gap: 30px;
-    
-    
+.underline h3::before {
+  color: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #f47e08;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
 }
-.testimonial .image{
-    height: 170px;
-    width: 170px;
-    object-fit: cover;
-    border-radius: 50%;
-
-
+.col li {
+  list-style: none;
 }
-.testimonial .slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: aliceblue;
-
-}
-.slide p{
-    text-align: center;
-    padding: 0 100px;
-    font-size: 20px;
-    font-weight: 400;
-}
-.slide i{
-    font-size: 30px;
-    color: #7d17dd;
-
-}
-.slide .details{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.details.name{
-    font-size: 30px;
-    font-weight: 700;
+.col li a {
+  text-decoration: none;
+  color: white;
 }
 
-.service_Item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:1.5rem;
-    padding: 0 30px;
-    background: #7c7a7a;
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    margin-right: 40px;
+.CVIB_COURSES span {
+  color: #f47e08;
+  background: #130202;
+  box-sizing: content-box;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+#MAIN h4 {
+  padding-right: 50px;
+}
+.small_course:hover {
+  transform: scale(1.3);
+  transition: 0.4s;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(164, 110, 240);
+}
+.testimonial {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  padding: 50px 0;
+  row-gap: 30px;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+.slide p {
+  text-align: center;
+  padding: 0 100px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.slide i {
+  font-size: 30px;
+  color: #7d17dd;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.details.name {
+  font-size: 30px;
+  font-weight: 700;
 }
 
-.service_Item img{
-    height: 90vh;
-    border-radius: 20px;
-    width: 50%;
-    margin-right: 20px;
-}
-.info h3{
-    color: white;
-    font-size: 80px;
-    text-transform: capitalize;
-    margin-bottom: 40px;
-    text-align: center;
-}
-.info span{
-    color: #f47e08;
-}
-.info p{
-    color: antiquewhite;
-    letter-spacing: 1px;
-    line-height: 28px;
-    margin-bottom: 45px;
-}
-.try{
-    display: flex;
-    align-items: center;
-}
-.btn{
-    background: #f47e08;
-    color: aliceblue;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    height: 40px;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: .4s;
-
-}
-.MOBILE_VERSION{
-    display: none;
+.service_Item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 30px;
+  background: #7c7a7a;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  margin-right: 40px;
 }
 
+.service_Item img {
+  height: 90vh;
+  border-radius: 20px;
+  width: 50%;
+  margin-right: 20px;
+}
+.info h3 {
+  color: white;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.info span {
+  color: #f47e08;
+}
+.info p {
+  color: antiquewhite;
+  letter-spacing: 1px;
+  line-height: 28px;
+  margin-bottom: 45px;
+}
+.try {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  background: #f47e08;
+  color: aliceblue;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  height: 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.MOBILE_VERSION {
+  display: none;
+}
 
 @media screen and (max-width: 767px) {
-    #COURSES .CVIB_COURSES{
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-        
-        
+  #COURSES .CVIB_COURSES {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 574px) {
+    #COURSES .CVIB_COURSES {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    @media screen and (min-width: 574px) {
-        #COURSES .CVIB_COURSES{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            
-        }
-    
+  }
+  @media screen and (max-width: 767px) {
+    .col {
+      width: 50%;
+      margin-bottom: 30px;
     }
-@media screen and (max-width: 767px){
-    .col{
-        width: 50%;
-        margin-bottom: 30px;
+  }
+  @media screen and (max-width: 574px) {
+    .col {
+      width: 100%;
+      margin-bottom: 30px;
     }
+  }
 
-}
-@media screen and (max-width: 574px){
-    .col{
-        width: 100%;
-        margin-bottom: 30px;
+  @media screen and (max-width: 574px) {
+    .footer {
+      display: block;
+      align-self: start;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 30px;
+      background-color: black;
     }
-
+  }
 }
 
-@media screen and (max-width: 574px){
-    .footer{
-        
-        display:block;
-        align-self: start;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 30px;
-        background-color: black;
-            
-    }
-
-}
-}
-            
 @media screen and (max-width: 574px) {
-    .row{
-        display: block;
-        align-items: center;
-        
-    }
-    .col{
-        flex-basis: 5%;
-    }
-    
-
-    
+  .row {
+    display: block;
+    align-items: center;
+  }
+  .col {
+    flex-basis: 5%;
+  }
 }
-@media screen and (max-width: 767px){
-    .footer{
-        width: 100%;
-        height: 100%;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: row;
-    }
-    .col{
-        flex-basis: 2%;
-    }
-
+@media screen and (max-width: 767px) {
+  .footer {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .col {
+    flex-basis: 2%;
+  }
 }
 @media screen and (max-width: 574px) {
-    .service_Item{
-        display: grid;
-        grid-template-columns: auto;
-        
-    }
-    .service_Item img{
-        width: auto;
-    }
-    #MAIN{
-        background: url('IMAGES/pexels-pixabay-265087.jpg') no-repeat;
-        background-size: cover;
-        height:50vh;
-        overflow: hidden;
-        margin-top: 2px;
-    
-        
-        
-    }
-    .content{
-        display: none;
-    }
-    .MOBILE_VERSION{
-        display: block;
-        justify-content: center;
-    }
-    .MOBILE_VERSION h2{
-    
-        font-size: 25px;
-        color:rgb(248, 248, 251);
-        background: #130202;
-        align-content: center;
-        align-items: center;
-        
-        
+  .service_Item {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .service_Item img {
+    width: auto;
+  }
+  #MAIN {
+    background: url("IMAGES/pexels-pixabay-265087.jpg") no-repeat;
+    background-size: cover;
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 2px;
+  }
+  .content {
+    display: none;
+  }
+  .MOBILE_VERSION {
+    display: block;
+    justify-content: center;
+  }
+  .MOBILE_VERSION h2 {
+    font-size: 25px;
+    color: rgb(248, 248, 251);
+    background: #130202;
+    align-content: center;
+    align-items: center;
+  }
+  .MOBILE_VERSION h1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    color: red;
+  }
+  .MOBILE_VERSION p {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    background-color: beige;
+  }
+  .enroll {
+    margin-left: 30%;
+  }
+}
 
-    }
-    .MOBILE_VERSION h1{
-        display: flex;
-        justify-content: center;
-        margin-left: 5%;
-        color: red;
-    }
-    .MOBILE_VERSION p{
-        display: flex;
-        justify-content: center;
-        margin-left: 5%;
-        background-color: beige;
-    }
-    .enroll{
-        margin-left: 30%;
-    }
-
-
-
-
-
+.sample .samples-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+.samples-row .IMAGES img {
+  height: 15rem;
+}
+.sample .samples-row .IMAGES {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  outline: 0.1rem solid #ccc;
+  outline-offset: -1.5rem;
+  cursor: pointer;
+}
+.sample-click h4 {
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+}
+.sample-click a {
+  background-color: #130202;
+  color: beige;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.heading h5 {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  background-image: url("Testimonial  images/PXL_20240118_092904160.jpg");
 }
