@@ -15,6 +15,43 @@ body{
     background: white;
 
 }
+.logo{
+    height: 50px;
+    width: 50px;
+}
+#HEADER{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 20px an 80px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+#navbar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: blue;
+}
+#navbar li a:hover{
+    color: red;
+    background:white;
+    box-shadow: 0 5px 15px rgba(0,0.3,0,0.0.6);
+}
+
+
+
 .CONTAINER{
     max-width: 1200px;
     margin: 0 auto;
@@ -74,7 +111,7 @@ body{
     min-height: 100vh;
     width: 100%;
     background: rgba(0,0,0,.8);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
@@ -111,3 +148,96 @@ body{
 .product-preview .preview .stars i{
     color: aqua;
 }
+.product-preview .preview  .buttons a{
+    flex: 1 1 16rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: #444;
+    border: .1rem solid #444;
+
+}
+.product-preview .preview  .buttons a.cart{
+    background: #444;
+    color: aliceblue;
+}
+.product-preview .preview  .buttons a.cart:hover{
+    background: #111;
+    color: #ccc;
+
+}
+.product .buttons a.buy{
+    flex: 1 1 5rem;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+    border: .1rem solid #444;
+
+    color: #f6f2f2;
+    background: #0a0a0a;
+    border-radius: 5px;
+
+    
+
+}
+.product .buttons a.buy:hover{
+    background: #f10e0e;
+    color: #ccc;
+
+    
+
+}
+
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.col{
+    padding: 5px;
+    padding-top: 5%;
+    padding-left: 2%;
+    font-size: large;
+    
+}
+.col a{
+    color: aliceblue;
+}
+    
+    .col a{
+        color: aliceblue;
+    }
+    .footer{
+        width: 100%;
+        height: 60vh;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        
+        background-color: #27252a;
+    }
+    
+
+    @media screen and (max-width: 574px){
+        .footer{
+            
+            display:block;
+            align-self: start;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin-bottom: 30px;
+            background-color: black;
+                
+        }
+    
+    }
+    @media screen and (max-width: 574px) {
+        .row{
+            display: block;
+            align-items: center;
+            
+        }
+        .col{
+            flex-basis: 5%;
+        }
+    }

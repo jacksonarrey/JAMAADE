@@ -3,24 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WELCOME TO CVIB</title>
     <link rel="stylesheet" href="contact.css">
+    <title>Contact us</title>
 </head>
 <body>
-    <section id="HEADER">
-        <a href="#">
-            <img src="IMAGES/LOGO/cvib logo.png" class="logo"> 
+    <div class="nav">
+        <img src="JAMAADE-LOGO-3.png" class="logo">
+    
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="blog.html">Blog</a>
+            <li><a href="News.html">news</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
 
-        </a>
-        <div>
-            <ul id="navbar">
-                <li><a href="home page.html">home</a></li>
-                <li><a href="class.html">class</a></li>
-                <li><a href="block.html">block</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+
+        </ul>
+        <label id="icon">
+            <i class='bx bx-menu'></i>
+        </label>
+    </div>
+</div>
+    <div class="contact-us">
+        <h1>Contact <span>Us</span></h1>
+    </div>
+    <div class="paragraph">
+        <p>We are always available for Freelance jobs and contracts<br> 
+            Contac us on<a href="#">whatsapp</a>  (237) 674881915 or Email <a href="#">creativesquadstudios@gmail.com</a></p>
+
+    </div>
+    <section class="contact">
+        <div class="contact_form">
+            
+            
+                <form action="https://formsubmit.co/creativesquadstudios@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required><br><br>
+                    <input type="email" placeholder="Your Email" name="email" id="Email"><br><br>
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input type="hidden" name="_cc" value="creativesquadstudios.com">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="Thank you for writing to us. You will hear from us soon">
+
+                    <input type="text" name="subject" placeholder="phone number" required><br><br>
+                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Write a Message" required></textarea><br><br>
+                    <button type="submit" class="btn">submit</button>
+                    
+                </form>
+                
+        </div>
+        <div class="contact_img">
+            <img src="IMAGES/Facebook/marvin-meyer-SYTO3xs06fU-unsplash.jpg" alt="">
         </div>
     </section>
+    <div class="popup" id="popup">
+        <h1>You message will be sent <br>once you click <span>OK</span></h1><br><br>
+        
+            <button type="button" class="btn" onclick="closepopup()">ok</button>
+    
+    </div>
+    <footer>
+        <div class="row">
+          
+            <div class="col">
+                <img src="images/creative squad studios temporal logo.psd 2.jpg" class="log">
+                <p>subscribe on our page to watch more of our contents on all social media platforms</p>
+            </div>
+            <div class="col">
+                <h3>OFFICE <div class="underline"><span></span></div></h3>
+                <p>Buea</p>
+                <p>Molyko</p>
+                <p class="email_id">creativesquadstudios</p>
+                <h>+237 674881915</h>
+            </div>
+            <div class="col">
+                <h3>links<div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="News.html">News</a>
+                       
+                    </li>
+                    <li><a href="">News</a></li>
+
+
+
+
+
+                </ul>
+
+            </div>
+            <div class="col">
+                <h3>SOCIAL MEDIA<div class="underline"><span></span></div></h3>
+               
+                <div class="social-icon">
+                    <a href="https://web.facebook.com/profile.php?id=100088443020835">
+                    <i class='bx bxl-facebook-circle'></i></a>
+                    <i class='bx bxl-instagram' ></i>
+                    <a href="https://www.youtube.com/"><i class='bx bxl-youtube '></i></a>
+                    <i class='bx bxl-whatsapp'></i>
+
+                </div>
+            </div>
+
+
+        </div>
+        
+        
+        
+    </footer>
+
+    <script>
+        let popup = document.getElementById(popup);
+        function openpopup(){
+            popup.classList.add("open-popup");
+
+        }
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+        
+    </script>
     
 </body>
 </html>
