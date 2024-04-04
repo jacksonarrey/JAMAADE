@@ -427,6 +427,12 @@
     display: grid;
     grid-template-columns: auto;
   }
+  .advert-video .promos {
+    display: block;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 3%;
+  }
   .service_Item img {
     width: auto;
   }
@@ -476,7 +482,7 @@
 .samples-row .IMAGES img {
   height: 15rem;
 }
-.sample .samples-row .IMAGES {
+.samples-row .IMAGES {
   text-align: center;
   padding: 3rem 2rem;
   background: white;
@@ -494,16 +500,15 @@
   background-color: #130202;
   color: beige;
   border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
 }
 .heading h5 {
   font-size: xx-large;
   display: flex;
   justify-content: center;
-  background-image: url("Testimonial  images/PXL_20240118_092904160.jpg");
+  background-image: url("IMAGES/camera images/pexels-alex-andrews-821749.jpg");
+  color: #cde113;
+  text-transform: capitalize;
+  text-align: center;
 }
 .advert-video .promo {
   text-align: center;
@@ -516,8 +521,15 @@
   margin-top: 5%;
 }
 .advert-video .promos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  display: flex;
+  justify-content: center;
   gap: 2rem;
   margin-left: 3%;
+}
+.advert-video .promos .promo iframe {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: none;
+  border: none;
 }
