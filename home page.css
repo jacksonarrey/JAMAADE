@@ -2,53 +2,159 @@
   margin: 0;
   padding: 0;
 }
-
 .logo {
-  height: 50px;
-  width: 50px;
-}
-#HEADER {
   display: flex;
+  width: 90px;
+  height: 90px;
+  margin: 0px 3px;
+  padding: 2.5cqmax;
+}
+
+.nav {
+  display: flex;
+  width: 100;
+  margin: auto;
+  padding: 20px 0;
   align-items: center;
   justify-content: space-between;
-  padding: 20px an 80px;
-  background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+  background: #03130b;
 }
-#navbar {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-#navbar li {
+
+.nav ul li {
+  display: inline;
   list-style: none;
-  padding: 0 20px;
+  margin: 10px 30px;
 }
-#navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: blue;
+
+.nav ul li a {
+  color: rgb(247, 246, 246);
+  font-weight: bold;
+  font-size: 18;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10 px;
+  border-radius: 3px;
 }
-#navbar li a:hover {
-  color: red;
-  background: white;
-  box-shadow: 0 5px 15px rgba(0, 0.3, 0, 0.6);
+.nav ul li a:hover {
+  border: 1px solid rgb(24, 254, 8);
+  transition: 0.5s;
 }
-.enroll a {
-  color: antiquewhite;
-  text-decoration: none;
+.sub ul li a {
+  display: flex;
+  color: #e61a1a;
 }
+.nav #icon {
+  color: white;
+  font-size: 3opx;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 540px) {
+  .nav #icon {
+    display: block;
+  }
+  .nav ul {
+    position: fixed;
+    width: 45%;
+    height: 70vh;
+    background: #2f3640;
+    top: 35px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 25px;
+    line-height: 70px;
+  }
+  .nav ul li a {
+    font-size: 20px;
+    color: beige;
+  }
+
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+  .nav ul.show {
+    left: 0;
+  }
+  .contact {
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+}
+@media (max-width: 900px) {
+  .nav #icon {
+    display: block;
+  }
+  .nav ul {
+    position: fixed;
+    width: 45%;
+    height: 70vh;
+    background: #2f3640;
+    top: 35px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
+  .nav ul li {
+    display: block;
+    margin: 25px;
+    line-height: 70px;
+  }
+  .nav ul li a {
+    font-size: 20px;
+    color: beige;
+  }
+
+  a.active,
+  a:hover {
+    border: none;
+    color: #3498db;
+  }
+  .nav ul.show {
+    left: 0;
+  }
+  .contact {
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+}
+
 #MAIN {
   background-image: url("IMAGES/pexels-pixabay-265087.jpg");
-  height: 90vh;
-  width: 100%;
+  height: 90%;
+  max-width: 100% !important;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   padding: 0 10px;
-  margin-top: 80px;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -115,6 +221,7 @@
 .course_1 h2 {
   text-align: center;
   font-size: xx-large;
+  margin-top: -12%;
 }
 .course_1 p {
   text-align: center;
@@ -145,7 +252,7 @@
 #COURSES .CVIB_COURSES {
   display: flex;
   flex-wrap: nowrap;
-  gap: 4rem;
+  gap: 1.5rem;
 }
 #BANNER .BANNER_1 {
   margin: 20px;
@@ -169,19 +276,15 @@
   font-size: 16;
   font-weight: 600;
   padding: 15px 30px;
-  color: black;
+  color: white;
   background-color: rgb(244, 17, 17);
   border-radius: 10px;
   cursor: pointer;
   border: none;
   outline: none;
-  transition: 0.2s;
+  transition: 0.1s;
   margin-left: 50%;
   margin-top: 3%;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 #BANNER button:hover {
   background: green;
@@ -249,12 +352,16 @@
   padding-right: 50px;
 }
 .small_course:hover {
-  transform: scale(1.3);
-  transition: 0.4s;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
+  transform: scale(1.02);
+  transition: 0.5s;
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 .container {
   height: 100vh;
@@ -495,6 +602,7 @@
   font-size: x-large;
   display: flex;
   justify-content: center;
+  margin-top: -5%;
 }
 .sample-click a {
   background-color: #130202;
