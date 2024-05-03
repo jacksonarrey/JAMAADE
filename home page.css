@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
 }
 .logo {
   display: flex;
@@ -286,6 +285,12 @@
   transition: 0.1s;
   margin-left: 50%;
   margin-top: 3%;
+}
+.call_to_action a{
+  margin-bottom: 2rem;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
 }
 #BANNER button:hover {
   background: green;
@@ -589,6 +594,13 @@
   }
   .enroll {
     margin-left: 30%;
+  }
+  .samples-row .IMAGES{
+    max-width: 95% !important;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 1rem;
+
   }
 }
 
