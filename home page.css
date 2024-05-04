@@ -263,6 +263,7 @@ section{
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
   margin: 15px 0;
+  background: white;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
