@@ -170,6 +170,33 @@ section{
     gap: 10px;
     padding: 20px 0;
   }
+  .offer{
+    margin-top: 30%;
+  }
+  .BANNER_1 h4{
+    margin-top: 20%;
+    padding-top: 10%;
+  }
+  .BANNER_1 h2{
+    margin-bottom: 25%;
+  }
+  #BANNER .BANNER_1{
+    padding-top: 5%;
+  }
+  #BANNER .BANNER_1 a{
+    margin-bottom: 10%;
+  }
+  .BANNER_1 span{
+    display: inline;
+  }
+  .banner_btn{
+    margin-bottom: 2%;
+  }
+  
+  
+
+
+
 }
 
 #MAIN {
@@ -294,7 +321,7 @@ section{
   color: white;
 }
 #BANNER h2 span {
-  color: blue;
+  color: rgb(243, 11, 23);
 }
 .offer{
   margin-top: 15%;
@@ -657,9 +684,10 @@ section{
     border-radius: 1rem;
     
   }
-  .sample{
+  .samples-row{
     background: #03130b;
     width: 100%;
+    margin-left: 5%;
   }
   .course_1{
     background-color: #3498db;

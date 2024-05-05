@@ -239,7 +239,7 @@ a{
 
 footer{
     width: 100%;
-    height: 60%;
+    height: 100%;
     background: linear-gradient(to right,#7d17dd, #212121);
     color: #fff;
     padding: 100px 0 70px;
@@ -358,9 +358,9 @@ form input{
         min-height: 100vh;
         display: block;
         justify-content:center ;
-        gap: 10px;
+        gap: 1rem;
         padding: 20px 0;
-        margin-right: 20%;
+        margin-right: 22%;
     }
     .contact_img img{
         height: 20rem;
@@ -386,7 +386,22 @@ form input{
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: space-between;
+    
     }
+    footer{
+        width: 100%;
+        max-height: fit-content;
+        background: linear-gradient(to right,#040404, #212121);
+        color: #fff;
+
+        display:block;
+    
+        
+    
+    
+    
+    }
+    
     
 }
 
