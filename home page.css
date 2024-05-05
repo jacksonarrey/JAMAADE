@@ -684,16 +684,23 @@ section{
     border-radius: 1rem;
     
   }
-  .samples-row{
-    background: #03130b;
-    width: 100%;
-    margin-left: 5%;
-  }
+
   .course_1{
     background-color: #3498db;
   }
+  .bgcolour{
+    background-color: #040404;
+    width: 100%;
+    
+  }
+  
+  
   .testimonial .slide {
     margin-right: 30%;
+  }
+  .sample-click a{
+    margin-left: 5px;
+    padding-top: 1px;
   }
   
 }
