@@ -567,21 +567,27 @@ section{
       width: 100%;
       margin-bottom: 30px;
     }
-    .advert-video .promos {
+    .advert-video .promo {
     max-width: 100% !important;
     margin: 20px auto;
     box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+    
     border-radius: 1rem;
     width: 60rem;
+    margin-right: 30%;
     }
     .advert-video .promos .promo iframe {
     max-width: 100% !important;
     margin: 20px auto;
     box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     border-radius: 1rem;
     max-height: 5% !important;
+    }
+    .advert-video {
+      display: flex;
+      justify-content: center;
+      margin-left: -22%;
+      
     }
     .container{
       margin-right: 20%;
@@ -680,16 +686,20 @@ section{
 
   }
   .samples-row .IMAGES img {
-    width: 30rem;
+    max-width: 20rem;
     height:15rem;
     margin: 1.5rem;
-    margin-right: 70%;
-    margin-bottom: -3%;
+    margin-right: 60%;
+    margin-top: -3%;
+    padding: 5px;
+    padding-right: 30px;
+    border-radius: 3px;
+    
     
   }
   .samples-row{
     margin-left: -50%;
-    background-color: #7c7a7a;
+    max-width: 500%;
   }
   
 
