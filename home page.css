@@ -670,20 +670,28 @@ section{
     margin-left: 30%;
   }
   .samples-row .IMAGES{
-    max-width: 95% !important;
-    margin-right: 50%;
-    overflow: hidden;
-    border-radius: 1rem;
+    width: 25rem;
+    height:15rem;
+    margin: 1.5rem;
+    display: flex;
+    align-content: center;
+    padding-right: 20%;
 
 
   }
   .samples-row .IMAGES img {
-    max-width: 95% !important;
-    margin-right: 50%;
-    overflow: hidden;
-    border-radius: 1rem;
+    width: 20rem;
+    height:15rem;
+    margin: 1.5rem;
+    margin-right: 70%;
+    margin-bottom: -3%;
     
   }
+  .samples-row{
+    margin-left: -50%;
+    background-color: #7c7a7a;
+  }
+  
 
   .course_1{
     background-color: #3498db;
