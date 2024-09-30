@@ -838,15 +838,16 @@ section{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); scale: 0;
-  background: #fff;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fbf8f8;
   width:450px ;
-  height:600px;
+  height:400px;
   z-index: 2;
   padding: 20px;
   box-sizing: border-box;
 }
 .pop_up .clossbtn{
+  cursor: pointer;
   position: absolute;
   right: 20px;
   top:10px ;
@@ -861,10 +862,57 @@ section{
   text-align: center;
   border-radius: 50%;
 }
-.pop_up.activate .overlay{
+.pop_up.active .overlay{
   display: block;
 }
 
-.pop_up.activate .content{
-  transform: all 300ms ease-in-out;
+.pop_up.active .content{
+  transition: all 500ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.NAME button{
+  color: white;
+  font-size: 10px;
+  font-weight: 500;
+  background: #3498db;
+  width: 160px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}  
+.NAME button:hover {
+  background: red;
+  transform: scale(1.1);
+  transition: .5s; 
+}
+
+.content h7{
+  display: flex;
+  justify-content: center;
+  color: red;
+  text-decoration: dashed;
+}
+.content.form{
+  display: flex;
+  justify-content: center;
+}
+
+.Registration_form input{
+  font-size: 16px;
+  padding: 15px 10px;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  outline: #222;
+  background: #27252a;
+  
+}
+.TRAING_COURSE{
+  background: #7f7e80;
+  
 }
