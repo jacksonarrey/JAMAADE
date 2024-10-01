@@ -729,8 +729,100 @@ section{
     margin-left: 5px;
     padding-top: 1px;
   }
+
+  .pop_up .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
   
+  }
+    
+    .pop_up.active .content{
+      transition: all 500ms ease-in-out;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .pop_up .content{
+      display: block;
+      justify-content: center;
+      max-height: 100vh;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      background: #fbf8f8;
+      width:450px ;
+      height:400px;
+      z-index: 1000;
+      padding: 20px;
+      box-sizing: border-box;
+      margin-left: 20%;
+      overflow-x: hidden;
+      margin-top: auto;
+      
+    }
+    .training h4{
+      display: flex;
+    }
+
+  }
+  .pop_up .clossbtn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top:10px ;
+    width: 30px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .pop_up.active .overlay{
+    display: block;
+  }
+  
+  .pop_up.active .content{
+    transition: all 500ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .NAME button{
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    background: #3498db;
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }  
+
+  
+  .TRAIN_IMG_HOLDER .imaj img{
+    max-width: 95% !important;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    
 }
+.TRAIN_IMG_HOLDER{
+  display: block;
+}
+  
+
 
 .sample .samples-row {
   display: grid;
@@ -804,23 +896,26 @@ section{
 
 }
 .TRAIN_IMG_HOLDER {
-  display: grid;
-    grid-template-columns:auto auto;
-    gap: 20px;
-    padding: 20px 0;
+  display: block;
+    justify-content: center;
 }
-.NAME h6 {
-  display: contents;
-  align-items: center;
+.training_title h6{
+  display: flex;
+  justify-content: center;
   font-size: xx-large;
   color: #e61a1a;
-  margin-left: 20%;
+  background-color: black;
+  padding: 25px 25px;
+  
+
+
    
 }
 .training h4{
   color: #e61a1a;
   font-size: 40px;
-  
+  display: flex;
+  justify-content: center;
 
 }
 .pop_up .overlay {
@@ -828,7 +923,7 @@ section{
   top: 0px;
   left: 0px;
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.7);
   z-index: 1;
   display: none;
@@ -836,8 +931,8 @@ section{
 }
 .pop_up .content{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 98%;
+  left: 20%;
   transform: translate(-50%, -50%) scale(0);
   background: #fbf8f8;
   width:450px ;
@@ -884,6 +979,7 @@ section{
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20%;
 }  
 .NAME button:hover {
   background: red;
@@ -904,7 +1000,7 @@ section{
 
 .Registration_form input{
   font-size: 16px;
-  padding: 15px 10px;
+  padding: 10px 10px;
   width: 100%;
   border: 0;
   border-radius: 5px;
@@ -915,4 +1011,17 @@ section{
 .TRAING_COURSE{
   background: #7f7e80;
   
+}
+.Registration_form select{
+ padding: 15px;
+ margin-left: 10%;
+ margin-top: 4%;
+
+}
+.Wrapper_main{
+  width: 1000px;
+  margin:0 auto
+}
+.imgb{
+  background-color: #ccc;
 }
