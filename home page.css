@@ -811,7 +811,7 @@ section{
   }  
 
   
-  .TRAIN_IMG_HOLDER .imaj img{
+  .TRAIN_IMG_HOLDER .newimage img{
     max-width: 95% !important;
     margin: 20px auto;
     overflow: hidden;
@@ -1018,10 +1018,7 @@ section{
  margin-top: 4%;
 
 }
-.Wrapper_main{
-  width: 1000px;
-  margin:0 auto
-}
+
 .imgb{
   background-color: #ccc;
 }
