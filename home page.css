@@ -684,13 +684,28 @@ a:hover{
     }
   }
 
-  @media screen and (max-width: 574px) {
-    
-  }
+  
 }
   
 
 @media screen and (max-width: 574px) {
+  .video-control .video .min-video {
+    max-width: 90% !important;
+    margin: 20px auto;
+    box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  .video-control .video {
+    display: block;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-between;
+    margin-right: 6%;
+  }
+  
+  
+  
   
   .service_Item {
     display: grid;
@@ -911,7 +926,7 @@ a:hover{
   text-align: center;
 }
 .advert-video .promo {
-  text-align: center;
+  text-align: center;cd
   padding: 3rem 2rem;
   background: white;
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -1152,7 +1167,7 @@ a:hover{
 .video-control .video .min-video {
   width: 25rem;
   height: 15rem;
-  margin: 2rem;
+  margin: .5rem;
   box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 1rem;
@@ -1166,8 +1181,10 @@ a:hover{
 }
 .video-control .video {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  
   
 }
+
 
