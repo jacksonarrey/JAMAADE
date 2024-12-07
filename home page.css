@@ -689,6 +689,9 @@ a:hover{
   
 
 @media screen and (max-width: 574px) {
+  .video{
+    margin-left: 5%;
+  }
   .video-control .video .min-video {
     max-width: 90% !important;
     margin: 20px auto;
@@ -696,13 +699,8 @@ a:hover{
     overflow: hidden;
     border-radius: 1rem;
   }
-  .video-control .video {
-    display: block;
-    flex-wrap: nowrap;
-    align-items: center;
-    align-content: space-between;
-    margin-right: 6%;
-  }
+
+  
   
   
   
@@ -926,7 +924,7 @@ a:hover{
   text-align: center;
 }
 .advert-video .promo {
-  text-align: center;cd
+  text-align: center;
   padding: 3rem 2rem;
   background: white;
   box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -1164,25 +1162,26 @@ a:hover{
   color: white;
   
 }
-.video-control .video .min-video {
+.video .min-video {
   width: 25rem;
   height: 15rem;
   margin: .5rem;
   box-shadow: 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
   overflow: hidden;
   border-radius: 1rem;
-}
-.video-control .video .min-video iframe {
+} 
+.video .min-video iframe {
   height: 100%;
   width: 100%;
   object-fit: cover;
   outline: none;
   border: none;
 }
-.video-control .video {
+.video {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: #a5c3ed;
   
   
 }
