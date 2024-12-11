@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="x-icon" href="IMAGES/flavicon/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact.css">
@@ -17,6 +18,30 @@
         })
 
     });
+
+    $(document).ready(function() {
+			// grab the initial top offset of the navigation 
+		   	var stickyNavTop = $('.nav').offset().top;
+		   	
+		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
+		   	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+			         
+			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+			    // otherwise change it back to relative
+			    if (scrollTop > stickyNavTop) { 
+			        $('.nav').addClass('sticky');
+			    } else {
+			        $('.nav').removeClass('sticky'); 
+			    }
+			};
+
+			stickyNav();
+			// and run it again every time you scroll
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});
  </script>
 </head>
 <body>
@@ -74,8 +99,8 @@
                     <h3>Bring more clients to your Business</h3>
                     <a href="https://wa.me/693847664" target="_blank" title="Chat with us on WhatsApp"><button class="enroll">Contact us Now</button> </a>
                 </div>
-        </div>
-        <div class="CVIB_COURSES">
+            </div>
+    
             <div class="small_course">
                 <img src="IMAGES/Google images/benjamin-dada-EDZTb2SQ6j0-unsplash.jpg">
                 <div class="NAME">
@@ -86,8 +111,8 @@
                     <h3>Bring more clients to your Business with Google Ads</h3>
                     <a href="https://wa.me/693847664" target="_blank" title="Chat with us on WhatsApp"><button class="enroll">WhatsApp message</button> </a>
                 </div>
-        </div>
-        <div class="CVIB_COURSES">
+            </div>
+        
             <div class="small_course">
                 <img src="IMAGES/Google images/julian-hochgesang-pgTUIohxAs8-unsplash.jpg">
                 <div class="NAME">
@@ -98,8 +123,8 @@
                     <h3>Get more views on your Youtube account.</h3>
                     <a href="https://wa.me/693847664" target="_blank" title="Chat with us on WhatsApp"><button class="enroll">Contact us Now</button> </a>
                 </div>
-        </div>
-        <div class="CVIB_COURSES">
+            </div>
+        
             <div class="small_course">
                 <img src="IMAGES/instagram/alexander-shatov-71Qk8ODIBko-unsplash.jpg">
                 <div class="NAME">
@@ -110,6 +135,8 @@
                     <h3>Put you Buisness out there on Instagram and let the world know what you are doing</h3>
                     <a href="https://wa.me/693847664" target="_blank" title="Chat with us on WhatsApp"><button class="enroll">Contact us Now</button> </a>
                 </div>
+            </div>
+
         </div>
         
         

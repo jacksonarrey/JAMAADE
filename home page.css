@@ -44,6 +44,17 @@ section{
   align-items: center;
   justify-content: space-between;
   background: #03130b;
+  position: sticky;
+
+  
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
 }
 
 .nav ul li {
@@ -945,12 +956,12 @@ a:hover{
     overflow: hidden;
     border-radius: 1rem;
 }
-#COURSES .CVIB_COURSES{
+ .CVIB_COURSES{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   gap: 2rem;
-  align-content: center;
-  margin-left: 4%;
+  flex-wrap: wrap;
+
 }
 #COURSES .course_1 h2{
   margin-top: 5%;
