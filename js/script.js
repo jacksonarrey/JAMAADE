@@ -1,32 +1,17 @@
-let preveiwContainer = document.querySelector('.product-preview');
-let preveiwBox = preveiwContainer.querySelectorAll('.preview');
+$(document).ready(function () {
+  function toggleContainerVisibility() {
+    var container = $('#ph');
+    var containerTop = container.offset().top;
+    var navBottom = $('.nav').offset().top + $('.nav').outerHeight();
+    var scrollTop = $(window).scrollTop();
 
-  document.querySelectorAll('.products-container .product').forEach(product =>{
-    product.onclick = () =>{
-      preveiwContainer.computedStyleMap.display= 'flex';
-      let name = product.getAttribute('data-name');
-      previewBox.forEach(preview =>{
-       let target = preview.getAttribute('data-target');
-        if(name == target){
-          preview.classList.add('active');
-        }
+    if (scrollTop + navBottom >= containerTop) {
+      container.addClass('visible');
+    } else {
+      container.removeClass('visible'); // Reset when scrolled back up
+    }
+  }
 
-
-      });
-    };
-  });
-
-
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  $(window).on('scroll', toggleContainerVisibility);
+  toggleContainerVisibility(); // Initial check
+});

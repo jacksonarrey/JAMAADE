@@ -40,7 +40,7 @@ section{
   display: flex;
   width: 100;
   margin: auto;
-  padding: 20px 0;
+  
   align-items: center;
   justify-content: space-between;
   background: #03130b;
@@ -282,6 +282,7 @@ section{
     background: red;
     padding: 30px 30px;
     border-radius:40px ;
+    font-family: 'Poppins';
 }
 .content P{
   color: white;
@@ -291,6 +292,109 @@ section{
 #MAIN .content button:hover {
   background-color: green;
   color: white;
+}
+.course_1{
+  margin-top: 10%;
+}
+.offer{
+  margin-bottom: 60%;
+}
+.paragraph{
+  text-align: justify;
+  display: inline-block;
+  width: 40%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #130202;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-sizing: content-box;
+  word-wrap: break-word;
+  overflow: auto;
+  white-space: normal;
+
+  
+
+}
+
+ .paragraph P{
+  color: #3498db;
+  text-align: start;
+  text-align: justify;
+  
+
+
+}
+.ABOUT_US_CONTENT{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.ABOUT_US_CONTENT img{
+  width: 30rem;
+  height: 30rem;
+  border-radius: 10px;
+}
+/*animation*/
+.heading{
+  opacity: 1;
+}
+.heading.animate__animated{
+  opacity: 1;
+}
+/* CPD PROVIDER */
+.cpd_provider P{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+  text-align: center;
+  padding: 5px;
+  
+}
+.cpd_provider h2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-weight: 700;
+
+}
+.CPD_IMAGES{
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #130202;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  margin-left: 30%;
+  background: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow-x: hidden;
+  box-sizing: content-box;
+  
+
+}
+.CPD_IMAGES img{
+  width: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.cpd_container{
+  background-color: #3498db;
+  height: 98vh;
 }
 .course_1 h2 {
   text-align: center;
@@ -1101,6 +1205,20 @@ a:hover{
   justify-content: center;
   flex-wrap: wrap;
   
+}
+#ph{
+  opacity: 0;
+  transform: translateY(100px);
+  transition:
+    opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.2s,
+    transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1) 0.2s;
+}
+#ph.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.spacer {
+  height: 100vh; /* Creates space to scroll */
 }
 .photoshoot_card{
   width: 325px;
